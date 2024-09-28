@@ -9,6 +9,65 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="m-4 border rounded">
+        <div class="bg-body-secondary pt-2">
+            <h3 class="ms-2">Generate Random Password</h3>
+            <hr>
+        </div>
+
+        <form action="#" method="get" class="row g-3 p-2">
+            <div class="form-outline col-6">
+                <label class="form-label" for="typeNumber">Choose character length</label>
+                <input type="number" id="typeNumber" class="form-control" min="8" max="20" required/>
+                <div id="passwordHelpBlock" class="form-text">
+                    Your password must be 8-20 characters long.
+                </div>
+            </div>
+
+            <div class="form-check col-6">
+                <input class="form-check-input d-block" type="checkbox" value="true" id="checkUpperLetter">
+                <label class="form-check-label d-block" for="checkUpperLetter">
+                    Add capital letters
+                </label>
+
+                <input class="form-check-input d-block" type="checkbox" value="true" id="checkNumber">
+                <label class="form-check-label d-block" for="checkNumber">
+                    Add numbers
+                </label>
+
+                <input class="form-check-input d-block" type="checkbox" value="true" id="checkSymbols">
+                <label class="form-check-label d-block" for="checkSymbols">
+                    Add symbols
+                </label>
+            </div>
+
+            <div class="col-8">
+                <label for="generatePassword" class="form-label">Password</label>
+                <div class="d-flex input-group">
+                    <input type="password" id="generatePassword" class="form-control" aria-describedby="passwordHelpBlock" readonly>
+                    <span class="input-group-text me-2 border rounded-end" onclick="showPassword()" id="showPassword">
+                        <i class="fa-regular fa-eye"></i>
+                    </span>
+                    <span class="input-group-text me-2 border rounded-end d-none" onclick="hiddenPassword()" id="hiddenPassword">
+                        <i class="fa-regular fa-eye-slash"></i>
+                    </span>
+                    <button class="btn btn-primary me-2 border rounded" onclick="copyText()" type="button">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                    <button class="btn btn-secondary border rounded" type="submit" onclick="generateRandomPassword()">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <p id="idk"></p>
+
+        <div class="text-center bg-body-secondary pe-2 pb-1">
+            <hr>
+            <p>By <a href="https://github.com/alejandrette" target="_blank" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">@alejandrette</a></p>
+        </div>
+    </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./apps.js"></script>
