@@ -1,4 +1,4 @@
-let password = document.getElementById("generatePassword")
+let password = document.getElementById("generatePassword");
 
 function generateRandomPassword() {
     let pass = "";
@@ -26,19 +26,24 @@ function generateRandomPassword() {
 }
 
 function showPassword() {
-    password.type = "text"
-    document.getElementById("showPassword").classList.add("d-none")
-    document.getElementById("hiddenPassword").classList.remove("d-none")
+    password.type = "text";
+    document.getElementById("showPassword").classList.add("d-none");
+    document.getElementById("hiddenPassword").classList.remove("d-none");
 }
 
 function hiddenPassword() {
-    password.type = "password"
-    document.getElementById("hiddenPassword").classList.add("d-none")
-    document.getElementById("showPassword").classList.remove("d-none")
+    password.type = "password";
+    document.getElementById("hiddenPassword").classList.add("d-none");
+    document.getElementById("showPassword").classList.remove("d-none");
 }
 
 function copyText() {
-    // password.select();
-    // password.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(password.value)
+    if (password.value === "") {
+        alert("No password generated to copy.");
+        return;
+    } else {
+        navigator.clipboard.writeText(password.value)
+    };
+
+    document.getElementById("messageCopy").innerHTML = "Copied!"
 }

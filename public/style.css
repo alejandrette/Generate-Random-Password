@@ -1,0 +1,20 @@
+.messageCopy {
+    visibility: hidden;
+    width: 80px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 10;
+    bottom: 110%;
+    left: 60%;
+    margin-left: -45px;
+}
+
+.btn-container-messageCopy:hover .messageCopy {
+    visibility: visible;
+}
