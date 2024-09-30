@@ -11,10 +11,6 @@ This is a random password generator that allows users to generate secure and cus
 - 👁️‍🗨️ Button to show/hide the generated password.
 - 📋 Functionality to copy the password to the clipboard with a single click.
 
-## 🖼️ Screenshot
-
-![Password Generator Screenshot](./screenshot.png) <!-- You can add a screenshot of your project here -->
-
 ## 🛠️ Technologies Used
 
 - **HTML5**: Website structure.
