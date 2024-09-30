@@ -11,10 +11,6 @@ Este es un generador de contraseñas aleatorias que permite generar contraseñas
 - 👁️‍🗨️ Botón para mostrar/ocultar la contraseña generada.
 - 📋 Funcionalidad para copiar la contraseña al portapapeles con un solo clic.
 
-## 🖼️ Captura de pantalla
-
-![Password Generator Screenshot](./screenshot.png) <!-- Puedes añadir una imagen de ejemplo del proyecto -->
-
 ## 🛠️ Tecnologías Utilizadas
 
 - **HTML5**: Estructura del sitio web.
